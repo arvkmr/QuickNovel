@@ -433,7 +433,7 @@ class RoyalRoadProvider : MainAPI() {
         val styles = document.select("style")
         val hiddenRegex = Regex("^\\s*(\\..*)\\s*\\{", RegexOption.MULTILINE)
         val chap = document.selectFirst("div.chapter-content") ?: return null
-        addAuthorNotes(chap, document)
+        //addAuthorNotes(chap, document)
 
         styles.forEach { style ->
             hiddenRegex.findAll(style.toString()).forEach {
